@@ -45,3 +45,5 @@ python -W ignore tune_hyperms.py --dataset=S1_1 --n_epoch=20 --epoch_per_test=2 
 
 In our environment, results of both datasets in one round can be obtained within 1 day. Running on TWOSIDES can be faster than DrugBank since TWOSIDES is smaller.
 
+## License
+EmerGNN is released under the MIT license. Further details can be found [here](LICENSE).
