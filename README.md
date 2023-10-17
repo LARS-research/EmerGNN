@@ -6,11 +6,11 @@ This section describes the installation process based on PyTorch. Firstly, you n
 ```
 # Create conda environment
 conda create -n emergnn python==3.8
+# Install nvcc
+conda install https://anaconda.org/conda-forge/cudatoolkit-dev/11.3.1/download/linux-64/cudatoolkit-dev-11.3.1-py38h497a2fe_0.tar.bz2
 # Install pytorch
 conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
 pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://data.pyg.org/whl/torch-1.10.1+cu113.html
-# Install nvcc
-conda install https://anaconda.org/conda-forge/cudatoolkit-dev/11.3.1/download/linux-64/cudatoolkit-dev-11.3.1-py38h497a2fe_0.tar.bz2
 # Install other necessary requirements 
 pip install -r requirements.txt
 ```
